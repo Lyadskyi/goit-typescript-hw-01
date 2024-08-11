@@ -1,4 +1,4 @@
-// JavaScript код
+// JavaScript код:
 
 // const age = 50;
 // const username = "Max";
@@ -8,7 +8,7 @@
 //   return 100 + a;
 // };
 
-// TypeScript код
+// TypeScript з відповідними типами для всіх змінних:
 
 const age: number = 50;
 const username: string = "Max";
@@ -19,5 +19,13 @@ const callback = (a: number): number => {
 };
 
 console.log(
-  `Types of variables: \nage: ${age}, \nusername: ${username}, \ntoggle: ${toggle}, \nempty: ${empty}, \ncallback: ${callback}`
-);
+  `Types of variables: \nage: ${age},\nusername: ${username},\ntoggle: ${toggle},\nempty: ${empty},\ncallback: ${callback}`
+); // Виведе:
+// Types of variables:
+// age: 50,
+// username: Max,
+// toggle: true,
+// empty: null,
+// callback: (a) => {
+//   return 100 + a;
+// }
