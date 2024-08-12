@@ -32,3 +32,5 @@ const page2: Page = {
 
 console.log(page1);
 console.log(page2);
+
+export {};

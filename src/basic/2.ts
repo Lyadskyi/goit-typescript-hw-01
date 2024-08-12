@@ -9,5 +9,3 @@ let person: [string, number];
 person = ["Max", 21];
 
 console.log(person); // Виведе: ["Max", 21]
-
-export {};

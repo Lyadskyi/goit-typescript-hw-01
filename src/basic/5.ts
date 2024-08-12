@@ -15,3 +15,5 @@ const isWeekend = (day: DayOfWeek): boolean => {
 console.log(isWeekend(DayOfWeek.Friday)); // Виведе: false
 console.log(isWeekend(DayOfWeek.Saturday)); // Виведе: true
 console.log(isWeekend(DayOfWeek.Sunday)); // Виведе: true
+
+export {};
