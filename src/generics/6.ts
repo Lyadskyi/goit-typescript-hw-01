@@ -22,4 +22,5 @@ const formParams: Params = {
   phone: "555-55-55",
 };
 
-console.log("Form Params:", formParams);
+console.log("Form parameteres:", formParams); // Виведе: Form parameteres: {email: "example@mail.com", firstName: "Denis",
+// lastName: "Queid", phone: "555-55-55"}

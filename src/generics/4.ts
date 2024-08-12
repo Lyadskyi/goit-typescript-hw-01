@@ -6,7 +6,7 @@ type User = {
 };
 
 function createOrUpdateUser(initialValues: Partial<User>) {
-  console.log("User data:", initialValues);
+  console.log("User data:", initialValues); // Виведе: User data: {email: "user@mail.com", password: "password123"}
 }
 
 createOrUpdateUser({
