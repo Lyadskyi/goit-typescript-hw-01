@@ -1,24 +1,25 @@
-// Завдання 6
+type Errors = {
+  email?: string[];
+  firstName?: string[];
+  lastName?: string[];
+  phone?: string[];
+};
 
-// Виконуйте це завдання у файлі src/generics/6.ts.
+type Form = {
+  email: string | null;
+  firstName: string | null;
+  lastName: string | null;
+  phone: string | null;
+  errors: Errors;
+};
 
-// У вас є тип Form, який містить інформацію про форму, включаючи поле errors. Ви хочете створити новий тип Params, який включає всі поля з Form, крім errors.
+type Params = Omit<Form, "errors">;
 
-// type Errors = {
-//   email?: string[];
-//   firstName?: string[];
-//   lastName?: string[];
-//   phone?: string[];
-// };
+const formParams: Params = {
+  email: "example@mail.com",
+  firstName: "Denis",
+  lastName: "Queid",
+  phone: "555-55-55",
+};
 
-// type Form = {
-//   email: string | null;
-//   firstName: string | null;
-//   lastName: string | null;
-//   phone: string | null;
-//   errors: Errors;
-// };
-
-// // Реалізуйте Params так,
-// // щоб унеможливити поле "errors" з типу Form
-// type Params = Form;
+console.log("Form Params:", formParams);
