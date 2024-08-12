@@ -11,4 +11,4 @@ const obj2 = { age: 40 };
 
 const mergedObj = merge(obj1, obj2);
 
-console.log(mergedObj); // Виведе: { name: "Dmytro", age: 40 }
+console.log(mergedObj); // Виведе: {name: "Dmytro", age: 40}

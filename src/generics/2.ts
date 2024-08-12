@@ -19,3 +19,28 @@
 //     weight: bottom.weight,
 //   }
 // }
+
+type User10 = {
+  id: number;
+  name: string;
+  email: string;
+};
+
+type UserBasicInfo = Pick<User10, "id" | "name">;
+
+let user10: User10 = {
+  id: 1,
+  name: "John Doe",
+  email: "john@example.com", // Error: Property "email" does not exist on type "UserBasicInfo" // Объектный литерал может
+  // использовать только известные свойства. "email" не существует в типе "UserBasicInfo"
+};
+
+let userBasicInfo: UserBasicInfo = {
+  id: 2,
+  name: "Sally",
+};
+
+console.log(user10);
+console.log(userBasicInfo);
+
+export {};
